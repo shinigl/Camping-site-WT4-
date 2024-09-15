@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background: #f2f2f2;
+
+}
+
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 1200px;
+    padding: 0 60px;
+
+
+
+}
+
+.logo p {
+    font-family: "Playwrite CU", cursive;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.l:hover {
+    color: #959494;
+}
+
+
+.lists {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+
+
+    &>li {
+        cursor: pointer;
+        padding: 5px 5px;
+        border-radius: 6px;
+        transition: 0.3s ease;
+
+    }
+
+    &>li:hover {
+        background-color: #565555;
+    }
+
+}
+
+
+.home {
+    height: 100vh;
+    /* width: 100vw; */
+    position: relative;
+    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+    background-position: center 60%;
+    background-size: cover;
+}
+
+.filter {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.29;
+    position: absolute;
+}
+
+.content {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>.sub-cont>h1 {
+        font-size: 65px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &>.sub-cont>p {
+
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .sub-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        &>.btn>button {
+            margin-top: 50px;
+            color: #565555;
+            width: 230px;
+            height: 50px;
+            border-radius: 12px;
+            outline: none;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #fff;
+            transition: 0.3s ease;
+
+        }
+    }
+
+    .btn a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+}
+
+
+button:hover {
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.3);
+
+}
+
+.btn a:hover {
+    color: #fff;
+}
+
+.serv {
+    margin: 50px 0;
+}
+
+.services h1 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.serv p {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-cont {
+
+    margin: auto;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    width: 350px;
+    margin: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card {
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+
+    &>.card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &>.card-info img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    &>.card-info h2 {
+        color: black;
+    }
+
+    &>.card-info p {
+        color: black;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+.about {
+
+    margin: auto;
+    margin-top: 80px;
+
+    max-width: 90%;
+
+    justify-content: center;
+
+    &>h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 35px;
+        color: black;
+
+    }
+
+    &>p {
+        text-align: center;
+        color: black;
+    }
+}
+
+.about-cont {
+    margin: 60px;
+}
+
+.ab-sub h1 {
+    color: black;
+}
+
+.ab-sub p {
+    color: black;
+}
+
+.ab-sub {
+    margin-top: 50px;
+
+    &>ul {
+        margin-left: 20px;
+    }
+
+    &>ul>li {
+        color: black;
+        padding-top: 10px;
+    }
+}
+
+footer {
+    margin: auto;
+    margin-top: 120px;
+    height: 550px;
+    max-width: 90%;
+}
+
+footer h1 {
+    text-align: center;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+}
+
+.last-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-lists ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 50px;
+    margin-top: 80px;
+}
+
+.last-lists ul li {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: black;
+}
+
+form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &>input {
+        height: 50px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid;
+        color: black;
+    }
+
+    &>textarea {
+        height: 150px;
+        border-radius: 8px;
+        padding: 10px;
+        color: black;
+    }
+
+    &>button {
+        height: 45px;
+        font-size: 15px;
+        width: 150px;
+        background-color: #333;
+        border-radius: 8px;
+        outline: none;
+        border: 1px solid white;
+        transition: 0.3s ease;
+    }
+
+    &>button:hover {
+        background-color: #696767;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:935px) {
+
+    .lists {
+        display: none;
+    }
+
+    .last-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    form {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &>input {
+            height: 50px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid;
+            color: black;
+        }
+
+        &>textarea {
+            height: 150px;
+            border-radius: 8px;
+            padding: 10px;
+            color: black;
+        }
+
+        &>button {
+            height: 45px;
+            font-size: 15px;
+            width: 150px;
+            background-color: #333;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid white;
+            transition: 0.3s ease;
+        }
+
+        &>button:hover {
+            background-color: #696767;
+        }
+    }
+
+
+}
